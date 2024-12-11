@@ -40,7 +40,7 @@ const MyOrderTableRow = (props) => {
 
                                     </Grid>
                                     <Grid item sm={11}>
-                                        <Typography variant="h6" gutterBottom component="div">
+                                        <Typography variant="h5" gutterBottom component="div">
                                             {orderItem.name}
                                         </Typography>
                                     </Grid>
@@ -59,10 +59,21 @@ const MyOrderTableRow = (props) => {
                                     <TableBody>
                                         <TableRow>
                                             <TableCell component="th" scope="row">
-                                                Seller name
+                                                Seller
                                                 </TableCell>
                                             <TableCell>{orderItem.quantity}</TableCell>
-                                            <TableCell align="right">Item price</TableCell>
+                                            <TableCell align="right">Price</TableCell>
+                                            <TableCell align="right">
+                                                {orderItem.price}
+                                            </TableCell>
+                                        </TableRow>
+
+                                        <TableRow>
+                                            <TableCell component="th" scope="row">
+                                                Seller
+                                                </TableCell>
+                                            <TableCell>{orderItem.quantity}</TableCell>
+                                            <TableCell align="right">Price</TableCell>
                                             <TableCell align="right">
                                                 {orderItem.price}
                                             </TableCell>
